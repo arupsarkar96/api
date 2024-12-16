@@ -1,0 +1,6 @@
+.env
+node_modules
+build
+dist
+firebase.json
+public/.well-known
