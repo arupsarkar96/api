@@ -16,7 +16,7 @@ v1Upload.post('/', authTokenChecker, upload.single('file'), async (req, res) => 
     if (file) {
         const remotePath = await transferToColdStorage(file.buffer)
         res.json({
-            url: remotePath,
+            url: `https://cdn.messant.in/${remotePath}`,
             size: file.size,
             mimetype: file.mimetype
         })
