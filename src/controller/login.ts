@@ -9,7 +9,7 @@ import { Login } from '../model/Login';
 
 
 
-const ACCESS_TOKEN_TTL = "3h"
+const ACCESS_TOKEN_TTL = "36h"
 
 export const createLoginController = async (username: string, password: string, ip: string): Promise<ApiResponse> => {
 
